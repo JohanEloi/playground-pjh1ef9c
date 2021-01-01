@@ -14,10 +14,16 @@ Pour résoudre l'exercice, il faut créer un programme qui passera les tests lor
 
 Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (Attention aux majuscules !) dans le programme suivant puis testez-le en appuyant sur } `Run`.
 
+**Remarques**
+ - `System.out.println()`est une instruction d'affichage dans le terminal;
+ - les instructions, en `Java`se terminent toujours par un `;`.
+
 ```java runnable
 public class Main {
   public static void main(String[] args) {
-    // A COMPLETER
+    //NE PAS CHANGER AVANT
+    // A COMPLETER : VOTRE CODE . . .
+    //NE PAS CHANGER APRES
   }
 }
 ```
