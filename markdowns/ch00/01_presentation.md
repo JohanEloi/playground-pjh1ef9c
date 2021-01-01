@@ -15,8 +15,9 @@ Pour résoudre l'exercice, il faut créer un programme qui passera les tests lor
 Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (Attention aux majuscules !) dans le programme suivant puis testez-le en appuyant sur } `Run`.
 
 **Remarques**
- - `System.out.println()`est une instruction d'affichage dans le terminal;
- - en Java, les instructions se terminent toujours par un `;`.
+ - `System.out.println()`est une instruction d'affichage dans le terminal ;
+ - en Java, les instructions se terminent toujours par un `;` ;
+ - `//` précise que la fin de la ligne est *un commentaire*, qui est essentiellement là pour la bonne lisibilité du code, pour indiquer des informations qui ne seront pas prises en compte par l'ordinateur au moment de l'exécution du programme.
 
 ```java runnable
 public class Main {
