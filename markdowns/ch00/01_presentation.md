@@ -1,0 +1,27 @@
+# Présentation
+
+Bienvenue dans ce recueil d'exercices pour apprendre Java dans le secondaire.
+
+Le but de ce recueil est de regrouper des exercices à travailler en autonomie, en classe ou à la maison, dans le but d'apprendre progressivement quelques concept de programmation _impérative_, dans un premier temps, puis de _Programmation Orientée Objet_, par la suite, avec le langage *Java*.
+
+# Comment ça marche ?
+
+Le principe est simple : sur chaque page se trouvent un ou plusieurs exercices à faire avec un énoncé et une présentation des variables qui seront données en entrée ainsi que les sorties qui sont attendues.
+
+Ensuite on trouve un cadre, comme ci-dessous, dans lequel il faut taper son code. Une partie du code est déjà prérempli et il ne vaut mieux pas toucher l'en-tête.
+
+Pour résoudre l'exercice, il faut créer un programme qui passera les tests lorsqu'on appuie sur `Run`.
+
+Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (Attention aux majuscules !) dans le programme suivant puis testez-le en appuyant sur } `Run`.
+
+```java runnable
+public class Main {
+  public static void main(String[] args) {
+    // A COMPLETER
+  }
+}
+```
+
+# Advanced usage
+
+If you want a more complex example (external libraries, viewers...), use the [Advanced Java template](https://tech.io/select-repo/385)

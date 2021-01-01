@@ -1,4 +1,13 @@
-title: Simple Java Template
+title: PL et Java
 plan:
-- title: Java Snippet
-  statement: statement.md
+- title: Présentation
+  statement: markdowns/ch00/01_presentation.md
+- title: Echauffement
+  statement: markdowns/ch00/02_planDeTravail.md
+- title: Les variables et leur type
+  statement: markdowns/ch01/11_variables.md
+
+projects:
+  java:
+    root: /java-project
+    runner: java
