@@ -4,10 +4,12 @@ Cette page contient juste une fenêtre pour tester vos codes `Java`. Elle peut s
 
 ```java runnable
 // { autofold
-public class PlanDeTravail{
+public class Main{
   public static void main(String[]args){
 // }     
-    //A COMPLETER
+    //NE PAS CHANGER AVANT
+    // VOTRE CODE . . .
+    //NE PAS CHANGER APRES
 // { autofold    
   }
 }
