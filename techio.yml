@@ -1,11 +1,15 @@
 title: PL et Java
 plan:
 - title: Présentation
-  statement: markdowns/ch00/01_presentation.md
-- title: Echauffement
-  statement: markdowns/ch00/02_planDeTravail.md
-- title: Les variables et leur type
-  statement: markdowns/ch01/11_variables.md
+  plan:
+    - title : Présentation
+      statement : markdowns/ch00/01_presentation.md
+    - title : Echauffement
+      statement: markdowns/ch00/02_planDeTravail.md
+- title: Cours
+  plan:
+    - title: Les variables et leur type
+      statement: markdowns/ch01/11_variables.md
 
 projects:
   java:
