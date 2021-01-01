@@ -4,7 +4,7 @@ Cette page contient juste une fenêtre pour tester vos codes `Java`. Elle peut s
 
 # @[Plan de travail]({"stubs": ["ch00/PlanDeTravail.java"], "command": "ch00/PlanDeTravail_TEST.java"})
 
-```java runner
+```java runnable
 public class PlanDeTravail{
   public static void main(String[]args){
     //A COMPLETER
