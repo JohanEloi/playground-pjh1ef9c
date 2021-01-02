@@ -147,7 +147,7 @@ System.out.println(d1 / d2);
 > Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
 
 + La **division euclidienne**
- - La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
+  - La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
 
 >Exemples
   - `25/7 = 3` car 25-3*7=4 et 0<=4<7
@@ -160,7 +160,7 @@ System.out.println(d1 / d2);
   - `27 % 7 = 6`
   - `28 % 7 = 0`
 
-- Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
+  - Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
 
 Compléter le code suivant pour que ce programme affiche un résultat comme ci-dessus
 
