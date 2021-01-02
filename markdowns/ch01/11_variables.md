@@ -146,6 +146,45 @@ System.out.println(d1 / d2);
 
 > Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
 
++ La **division euclidienne**
+ - La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
+
+>Exemples
+  - `25/7 = 3` car 25-3*7=4 et 0<=4<7
+  - `27/7 = 3` car 27-3*7=6 et 0<=7<7
+  - `28/7 = 4` car 28-4*7=0 et 0<=0<7
+
+  - Le **reste de la division entière** est donné par `n % m` :
+>
+  - `25 % 7 = 4`
+  - `27 % 7 = 6`
+  - `28 % 7 = 0`
+
+- Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
+
+Compléter le code suivant pour que ce programme affiche un résultat comme ci-dessus
+
+```java runnable
+//{autofold
+public class Main{
+  public static void main(String[] args){      
+//}
+int n = 25 ; //Valeur qui peut être modifiée !
+int m = 7 ; //idem !
+//MODIFIER LES 2 LIGNES SUIVANTES
+int quotient = 0 ;
+int reste = 0 ;
+
+System.out.print("n vaut ");System.out.println(n);
+System.out.print("m" vaut ");System.out.println(m);
+System.out.print("La division entière de n par m vaut ");System.out.println(quotient);
+System.out.print("et son reste vaut ");System.out.println(reste);
+//{autofold
+  }
+}
+//}
+```
+
 + Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.
   - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.
   - Pour la _racine carrée_, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.
