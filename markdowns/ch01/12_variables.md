@@ -1,4 +1,4 @@
-## Cours : Variables, types et opérations
+# Cours : Variables, types et opérations
 
 ## Partie 2 : Les opérations sur les variables numériques
 
