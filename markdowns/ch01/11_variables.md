@@ -1,7 +1,6 @@
-<h1> <center>Cours : Variables et opérations </center></h1>
+# Cours : Variables, types et opérations
 
-# Partie I
-## Les variables et leur type
+## Partie 1 : Les variables et leur type
 
 Une variable en informatique permet de garder en mémoire (le temps que le programme s'exécute) des données comme par exemple le résultat d'un calcul ou un mot, une liste ou bien d'autres choses.  
 Pour stocker en mémoire une valeur dans une variable, on utilise simplement le signe égal `=`.  
@@ -58,3 +57,82 @@ public class Main{
 // }
 ```
 Petite explication des résultats affichés : Au début `a` vaut 3. Ensuite, on lui ajoute 2 et on stocke le résultat dans `a`. Donc maintenant `a` vaut 5, ce qu'on affiche en premier. Enfin on calcule `a+a` donc 5+5=10 qu'on stocke de nouveau dans `a`, d'où l'affichage du 10 en deuxième.
+
+## Partie II : Les opérations sur les variables numériques
+
+### Les types de variables
+
+En Java, il y a 8 *types primitifs*.
++ 4 types de nombres entiers :
+  - `byte` : pour un nombre entier entre `-128` et `+127` ;
+  - `short`: pour un nombre entier entre `-32 768` et `32 767` ;
+  - `ìnt` : pour un nombre entier entre `-2 147 483 648` et `2 147 483 647` ;
+  - `long` : pour un nombre entier entre `-9 223 372 036 854 775 808` et `9 223 372 036 854 775 807`.
++ 2 types de nombres *à virgule* :
+  - `float`: pour un nombre décimal, codé sur 4 octets ;
+  - `double`: pour un nombre décimal, codé sur 8 octets.
++ Et enfin :
+  - `char`: pour un caractère, codé sur 2 octets, supporte l'Unicode ;
+  - `boolean`: pour représenter une information booléenne, c'est-à-dire soit *VRAI* `true`, soit *FAUX* `false`.
+
+Dans la pratique, nous utiliserons le type `int` pour un nombre entier et le type `double` pour un nombre à virgule.
+
+A côté de ces 8 types *primitifs*, nous avons déjà rencontré le type *chaine de caractères* : `String`.
+
+**Code**  
+
+``` java
+byte heure = 0 ; // l'heure est entre 0 et 23
+short annee = 2021 ;
+int n ; //n est déclaré mais pas initialisé
+long l ;
+float x ;
+double delta ;
+char c = 'a' ; // un caractère est toujours entre ' et '
+boolean b = false ; // ou bien true
+String s = "Hello World !" ;// une chaine de caractères est toujours en " et "
+```
+
+## Les opérations numériques
+
+Dans cette partie, nous allons voir les opérations de base que l'on peut effectuer en python sur des nombres.
+
++ Il y a bien sûr les quatre opérations classiques `+`, `-`, `*`, `/` avec les priorités opératoires habituelles. Par exemple :
+  ```python runnable
+  a = 5
+  b = 3
+  print(a + b)
+  print(a - b)
+  print(a * b)
+  print(a / b)
+  ```
+
++ Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.
+  - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.
+  - Pour la _racine carrée_, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.
+
+  **Exemples**.
+  On a ajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un `#` (hashtag) devant. Tout ce qui suit le `#` ne sera pas executé par python et ne sert donc qu'à la personne qui lit le programme.
+  ```python runnable
+  print(2**3) # Affiche le résultat de 2 puissance 3
+  print(3**2) # Affiche le résultat de 3 puissance 2
+  print(9**0.5) # Affiche la racine carrée de 9
+  print(2**0.5) # Affiche la racine carrée de 2
+  ```
+
++ On peut aussi réaliser facilement des divisions euclidiennes (c'est-à-dire les divisions posées comme au primaire).
+  - Pour obtenir le _quotient_ de la division de `a` par `b`, il suffit d'écrire `a // b`.
+  - Pour obtenir le _reste_ de la division de `a` par `b`, il suffit d'écrire `a % b`.
+
+  Remarque : La différence entre `a / b`et `a // b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'_entier_ q tel que 0 <= a-bq < b.
+
+  Voici quelques exemples que vous pouvez modifier pour vérifier que vous avez bien compris.
+  ```python runnable
+  a = 17
+  b = 3
+  print(a // b) # Affiche le quotient de la division euclidienne de a par b
+  print(a % b)  # Affiche le reste de la division euclidienne de a par b
+  ```
+
+  **Remarque**. Même si ces opérations sont finalement assez peu utilisées en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne (l'opérateur modulo).
+  Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x % 2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
