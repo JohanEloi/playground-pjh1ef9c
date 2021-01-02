@@ -11,7 +11,10 @@ plan:
     - title: Notion de variable
       statement: markdowns/ch01/11_variables.md
     - title: Types et opérations numériques
-      statement: markdowns/ch01/12_variables.md      
+      statement: markdowns/ch01/12_variables.md
+    - title: Exercices
+      statement: markdowns/ch01/13_variables.md   
+
 
 projects:
   java:
