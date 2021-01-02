@@ -4,12 +4,14 @@ plan:
   plan:
     - title : Présentation
       statement : markdowns/ch00/01_presentation.md
-    - title : Echauffement
+    - title : Plan de travail
       statement: markdowns/ch00/02_planDeTravail.md
-- title: Cours
+- title: Variables, types et opérations
   plan:
-    - title: Les variables et leur type
+    - title: Notion de variable
       statement: markdowns/ch01/11_variables.md
+    - title: Types et opérations numériques
+      statement: markdowns/ch01/12_variables.md      
 
 projects:
   java:
