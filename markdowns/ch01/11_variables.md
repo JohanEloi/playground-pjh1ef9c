@@ -174,7 +174,7 @@ int quotient = 0 ;
 int reste = 0 ;
 
 System.out.print("n vaut ");System.out.println(n);
-System.out.print("m" vaut ");System.out.println(m);
+System.out.print("m vaut ");System.out.println(m);
 System.out.print("La division entière de n par m vaut ");System.out.println(quotient);
 System.out.print("et son reste vaut ");System.out.println(reste);
 //{autofold
