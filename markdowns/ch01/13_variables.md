@@ -94,6 +94,8 @@ System.out.println((a / b) + (a % b));
 -[x] 6
 -[ ] 114.4
 
+===
+
 ### À vous !
 
 #### Exercice 1 :
