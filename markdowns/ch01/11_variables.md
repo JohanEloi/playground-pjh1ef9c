@@ -97,7 +97,7 @@ String s = "Hello World !" ;// une chaine de caractères est toujours en " et "
 
 Dans cette partie, nous allons voir les opérations de base que l'on peut effectuer en java sur des nombres.
 
-**Remarque** il faut bien distinguer, en java, l'utilisation d'un entier de l'utilisation d'un nombre à virgule. En effet, ils sont différents sous différents aspects.
+**Remarque préliminaire** il faut bien distinguer, en java, l'utilisation d'un entier de l'utilisation d'un nombre à virgule. En effet, ils sont différents sous différents aspects.
 
 A titre d'exemple, ajoutez les instructions suivantes et exécutez :
   - `System.out.print("n = ") ; System.out.println(n) ;`
@@ -119,7 +119,8 @@ double d = 5 ;
 
 Même si on affecte aux variables `n` et `d` le nombre `5`, à l'affichage, le `int` et le `double` apparaissent différemment : `5`et `5.0`. Nous verrons qu'il y a d'autres différences, notamment au niveau calculatoire.
 
-+ Commençons par les quatre opérations classiques `+`, `-`, `*`, `/` avec les priorités opératoires habituelles. Par exemple :
+#### Opérations classiques
+Commençons par les quatre opérations classiques `+`, `-`, `*`, `/` avec les priorités opératoires habituelles. Par exemple :
 
 ```java runnable
 // { autofold
@@ -146,21 +147,20 @@ System.out.println(d1 / d2);
 
 > Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
 
-+ La **division euclidienne**
-  - La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
-
+#### La division euclidienne
+  + La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
 >Exemples
   - `25/7 = 3` car 25-3*7=4 et 0<=4<7
   - `27/7 = 3` car 27-3*7=6 et 0<=7<7
   - `28/7 = 4` car 28-4*7=0 et 0<=0<7
 
-  - Le **reste de la division entière** est donné par `n % m` :
->
+  + Le **reste de la division entière** est donné par `n % m` :
+>Exemples
   - `25 % 7 = 4`
   - `27 % 7 = 6`
   - `28 % 7 = 0`
 
-  - Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
+  + Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
 
 Compléter le code suivant pour que ce programme affiche un résultat comme ci-dessus
 
