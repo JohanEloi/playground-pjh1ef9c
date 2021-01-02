@@ -64,10 +64,10 @@ Petite explication des résultats affichés : Au début `a` vaut 3. Ensuite, on 
 
 En Java, il y a 8 *types primitifs*.
 + 4 types de nombres entiers :
-  - `byte` : pour un nombre entier entre `-128` et `+127` ;
-  - `short`: pour un nombre entier entre `-32 768` et `32 767` ;
+  - `byte` : pour un très petit nombre entier, entre `-128` et `+127` ;
+  - `short`: pour un petit nombre entier, entre `-32 768` et `32 767` ;
   - `ìnt` : pour un nombre entier entre `-2 147 483 648` et `2 147 483 647` ;
-  - `long` : pour un nombre entier entre `-9 223 372 036 854 775 808` et `9 223 372 036 854 775 807`.
+  - `long` : pour un grand nombre entier, entre `-9 223 372 036 854 775 808` et `9 223 372 036 854 775 807`.
 + 2 types de nombres *à virgule* :
   - `float`: pour un nombre décimal, codé sur 4 octets ;
   - `double`: pour un nombre décimal, codé sur 8 octets.
@@ -75,7 +75,7 @@ En Java, il y a 8 *types primitifs*.
   - `char`: pour un caractère, codé sur 2 octets, supporte l'Unicode ;
   - `boolean`: pour représenter une information booléenne, c'est-à-dire soit *VRAI* `true`, soit *FAUX* `false`.
 
-Dans la pratique, nous utiliserons le type `int` pour un nombre entier et le type `double` pour un nombre à virgule.
+> *Dans la pratique, nous utiliserons le type `int` pour un nombre entier et le type `double` pour un nombre à virgule.*
 
 A côté de ces 8 types *primitifs*, nous avons déjà rencontré le type *chaine de caractères* : `String`.
 
@@ -93,19 +93,54 @@ boolean b = false ; // ou bien true
 String s = "Hello World !" ;// une chaine de caractères est toujours en " et "
 ```
 
-## Les opérations numériques
+### Les opérations numériques
 
-Dans cette partie, nous allons voir les opérations de base que l'on peut effectuer en python sur des nombres.
+Dans cette partie, nous allons voir les opérations de base que l'on peut effectuer en java sur des nombres.
 
-+ Il y a bien sûr les quatre opérations classiques `+`, `-`, `*`, `/` avec les priorités opératoires habituelles. Par exemple :
-  ```python runnable
-  a = 5
-  b = 3
-  print(a + b)
-  print(a - b)
-  print(a * b)
-  print(a / b)
-  ```
+**Remarque** il faut bien distinguer, en java, l'utilisation d'un entier de l'utilisation d'un nombre à virgule. En effet, ils sont différents sous différents aspects.
+
+A titre d'exemple, ajoutez les instructions `System.out.print("n = ") ; System.out.println(n) ;` et `System.out.print("d = ") ; System.out.println(d) ;`
+
+```java runnable
+// { autofold
+public class Main{
+  public static void main(String[] args){
+// }
+int n = 5 ;
+double d = 5 ;
+//Ajoutez ici les instructions
+//{autofold
+  }
+}
+//}
+```
+
+Même si on affecte aux variables `n` et `d` le nombre `5`, à l'affichage, le `int` et le `double` apparaissent différemment : `5`et `5.0`. Nous verrons qu'il y a d'autres différences, notamment au niveau calculatoire.
+
++ Commençons par les quatre opérations classiques `+`, `-`, `*`, `/` avec les priorités opératoires habituelles. Par exemple :
+
+```java runnable
+// { autofold
+public class Main{
+  public static void main(String[] args){
+// }
+int n1 = 5 ; int n2 = 3 ;
+System.out.println(n1 + n2);
+System.out.println(n1 - n2);
+System.out.println(n1 * n2);
+System.out.println(n1 / n2);
+
+double d1 = 5 ; double d2 = 3 ;
+System.out.println(d1 + d2);
+System.out.println(d1 - d2);
+System.out.println(d1 * d2);
+System.out.println(d1 / d2);
+
+// { autofold
+  }
+}
+// }
+```
 
 + Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.
   - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.
