@@ -145,7 +145,7 @@ System.out.println(d1 / d2);
 // }
 ```
 
-> Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
+Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
 
 #### La division euclidienne
   + La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
@@ -160,7 +160,7 @@ System.out.println(d1 / d2);
 
   + Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
 
-Compléter le code suivant pour que ce programme affiche un résultat comme ci-dessus
+Modifier le code suivant pour que ce programme affiche le résultat de la division euclidienne de `n`par `m`.
 
 ```java runnable
 //{autofold
@@ -173,6 +173,7 @@ int m = 7 ; //idem !
 int quotient = 0 ;
 int reste = 0 ;
 
+//Affichage des résultats
 System.out.print("n vaut ");System.out.println(n);
 System.out.print("m vaut ");System.out.println(m);
 System.out.print("La division entière de n par m vaut ");System.out.println(quotient);
@@ -183,32 +184,50 @@ System.out.print("et son reste vaut ");System.out.println(reste);
 //}
 ```
 
-+ Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.
-  - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.
-  - Pour la _racine carrée_, on va simplement utiliser une propriété mathématique : $`\sqrt x = x^{0.5}`$. Donc pour calculer la racine carrée d'un nombre `x`, il suffit d'écrire `x**0.5`.
+_**Remarque**_. Même si ces opérations sont finalement assez peu utilisées en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne (l'opérateur modulo).
+Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x % 2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
 
-  **Exemples**.
-  On a ajouté des commentaires à coté des instructions d'affichage des calculs pour que ces instructions soient plus claires. Pour écrire un commentaire, il suffit de mettre un `#` (hashtag) devant. Tout ce qui suit le `#` ne sera pas executé par python et ne sert donc qu'à la personne qui lit le programme.
-  ```python runnable
-  print(2**3) # Affiche le résultat de 2 puissance 3
-  print(3**2) # Affiche le résultat de 3 puissance 2
-  print(9**0.5) # Affiche la racine carrée de 9
-  print(2**0.5) # Affiche la racine carrée de 2
-  ```
+#### Division réelle - Conversion de types
 
-+ On peut aussi réaliser facilement des divisions euclidiennes (c'est-à-dire les divisions posées comme au primaire).
-  - Pour obtenir le _quotient_ de la division de `a` par `b`, il suffit d'écrire `a // b`.
-  - Pour obtenir le _reste_ de la division de `a` par `b`, il suffit d'écrire `a % b`.
+Pour effectuer la division réelle, il est donc nécessaire que les valeurs soient de type `double`:
+```java runnable
+//{autofold
+public class Main{
+  public static void main(String[] args){
+//}
+    System.out.println(5/2) ;
+    System.out.println(5.0/2.0) ;
+    //Ou encore
+    int n = 10 ; int m = 3 ;
+    double d1 = 10 ; double d2 = 3 ;
+    System.out.println(n/m) ;
+    System.out.println(d1/d2) ;
+//{autofold
+  }
+}
+//}
+```
 
-  Remarque : La différence entre `a / b`et `a // b`est que le premier donne une valeur approchée décimale à 16 chiffres après la virgule alors que la deuxième nous donne l'_entier_ q tel que 0 <= a-bq < b.
+On voit que *directement*, on ne sait pas effectuer la division réelle entre 2 `int`. Il faut **forcer** cette division réelle, en précisant explicitement que la variable doit être considérée comme un `double`.
 
-  Voici quelques exemples que vous pouvez modifier pour vérifier que vous avez bien compris.
-  ```python runnable
-  a = 17
-  b = 3
-  print(a // b) # Affiche le quotient de la division euclidienne de a par b
-  print(a % b)  # Affiche le reste de la division euclidienne de a par b
-  ```
+**Conversion de types** Afin de *convertir* un `int` en `double` il suffit de mettre le nom du type entre parenthèses devant la variable à convertir : `(double) n` convertit l'entier `n` en variable de type `double`.
 
-  **Remarque**. Même si ces opérations sont finalement assez peu utilisées en cours de mathématiques, elles le sont beaucoup plus en informatique, principalement le calcul du reste de la division euclidienne (l'opérateur modulo).
-  Par exemple pour déterminer si un nombre est pair, il suffit de regarder si `x % 2` vaut 0. En effet, un nombre est pair si et seulement si son reste par la division par 2 est nul. On l'utilisera régulièrement dans les exercices.
+```java runnable
+//{autofold
+public class Main{
+  public static void main(String[] args){
+//}
+    int n = 10 ; int m = 3 ;
+    System.out.println(n/m) ;
+    System.out.println((double)n / (double)m) ;
+
+    double x = 2.5 ; double y = 3.9 ;
+    System.out.println(x);
+    System.out.println(y);
+    System.out.println((int)x);
+    System.out.println((int)y);
+//{autofold
+  }
+}
+//}
+```
