@@ -99,7 +99,9 @@ Dans cette partie, nous allons voir les opérations de base que l'on peut effect
 
 **Remarque** il faut bien distinguer, en java, l'utilisation d'un entier de l'utilisation d'un nombre à virgule. En effet, ils sont différents sous différents aspects.
 
-A titre d'exemple, ajoutez les instructions `System.out.print("n = ") ; System.out.println(n) ;` et `System.out.print("d = ") ; System.out.println(d) ;`
+A titre d'exemple, ajoutez les instructions suivantes et exécutez :
+  - `System.out.print("n = ") ; System.out.println(n) ;`
+  - `System.out.print("d = ") ; System.out.println(d) ;`
 
 ```java runnable
 // { autofold
@@ -129,7 +131,7 @@ System.out.println(n1 + n2);
 System.out.println(n1 - n2);
 System.out.println(n1 * n2);
 System.out.println(n1 / n2);
-
+System.out.println(" ********************");
 double d1 = 5 ; double d2 = 3 ;
 System.out.println(d1 + d2);
 System.out.println(d1 - d2);
@@ -141,6 +143,8 @@ System.out.println(d1 / d2);
 }
 // }
 ```
+
+> Nous remarquons que la division entre 2 `int` et 2 `double` est différente ! La première est la *division entière* et la deuxième est la division réelle.
 
 + Les deux autres opérations qu'on utilise couramment sont les puissances et la racine carrée.
   - Pour les _puissances_, on double simplement la multiplication. Ainsi $`x^n`$ s'obtiendra en écrivant `x**n`.
