@@ -10,6 +10,7 @@ plan:
   plan:
     - title: Les variables et leur type
       statement: markdowns/ch01/11_variables.md
+      statement: markdowns/ch01/12_varP2.md
 
 projects:
   java:
