@@ -149,14 +149,14 @@ System.out.println(d1 / d2);
 
 #### La division euclidienne
   + La **division entière** et est donnée par `n / m`où `n`et `m`sont 2 variables de type `int`. Le résultat de la division entière est l'entier `q` tel que `0 <= n-qm < m`.
-  - `25/7 = 3` car 25-3*7=4 et 0<=4<7
-  - `27/7 = 3` car 27-3*7=6 et 0<=7<7
-  - `28/7 = 4` car 28-4*7=0 et 0<=0<7
+    - `25/7 = 3` car 25-3*7=4 et 0<=4<7
+    - `27/7 = 3` car 27-3*7=6 et 0<=7<7
+    - `28/7 = 4` car 28-4*7=0 et 0<=0<7
 
   + Le **reste de la division entière** est donné par `n % m` :
-  - `25 % 7 = 4`
-  - `27 % 7 = 6`
-  - `28 % 7 = 0`
+    - `25 % 7 = 4`
+    - `27 % 7 = 6`
+    - `28 % 7 = 0`
 
   + Calcul d'une division euclidienne (la "division écrite" apprise en primaire), par exemple : **25 / 7 vaut 3 reste 4**
 
