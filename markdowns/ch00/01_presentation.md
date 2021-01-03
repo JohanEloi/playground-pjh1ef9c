@@ -26,7 +26,7 @@ public class Main {
 // }
     //NE PAS CHANGER AVANT
     // A COMPLETER : VOTRE CODE . . .
-    System.out.println(this.test());
+    System.out.println(test());
     //NE PAS CHANGER APRES
 // { autofold
   }
