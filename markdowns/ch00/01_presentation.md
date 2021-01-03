@@ -20,11 +20,19 @@ Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (A
  - `//` précise que la fin de la ligne est *un commentaire*, qui est essentiellement là pour la bonne lisibilité du code, pour indiquer des informations qui ne seront pas prises en compte par l'ordinateur au moment de l'exécution du programme.
 
 ```java runnable
+// { autofold
 public class Main {
   public static void main(String[] args) {
+// }
     //NE PAS CHANGER AVANT
     // A COMPLETER : VOTRE CODE . . .
+    System.out.println(this.test());
     //NE PAS CHANGER APRES
+// { autofold
+  }
+  public static String test(){
+    return "Okayyyy!";
   }
 }
+// }
 ```
