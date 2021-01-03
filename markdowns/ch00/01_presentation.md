@@ -23,7 +23,7 @@ Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (A
 // { autofold
 public class Main {
   public static void main(String[] args) {
-    System.out.println(test());
+    System.out.println(donneReponse());
   }
 
   public static String donneReponse(){
