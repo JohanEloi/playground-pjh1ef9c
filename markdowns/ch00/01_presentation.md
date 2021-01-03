@@ -23,14 +23,15 @@ Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (A
 // { autofold
 public class Main {
   public static void main(String[] args) {
+    System.out.println(test());
+  }
+
+  public static String donneReponse(){
 // }
     //NE PAS CHANGER AVANT
     // A COMPLETER : VOTRE CODE . . .
-    System.out.println(test());
     //NE PAS CHANGER APRES
 // { autofold
-  }
-  public static String test(){
     return "Okayyyy!";
   }
 }
