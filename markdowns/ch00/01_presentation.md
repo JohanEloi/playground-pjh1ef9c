@@ -28,4 +28,3 @@ public class Main {
   }
 }
 ```
-@[Programme de calcul]({"stubs": ["plgit/src/main/ch00/HelloWorld.java"], "command": "plgit/src/test/ch00/HelloWorld_TEST#test"})

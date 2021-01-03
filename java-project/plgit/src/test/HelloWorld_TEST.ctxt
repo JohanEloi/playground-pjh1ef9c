@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=HelloWorld_TEST
-comment1.params=
-comment1.target=void\ test()
-comment2.params=channel\ msg
-comment2.target=void\ msg(java.lang.String,\ java.lang.String)
-comment3.params=success
-comment3.target=void\ success(boolean)
-numComments=4
