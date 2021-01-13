@@ -120,7 +120,7 @@ La consigne de cet exercice est identique au précédent.
 
 Appuyez sur `Run` et suivez les instructions qui s'affichent.
 
-NRemplacez le mot-clé `pass` par votre code.
+Remplacez le mot-clé `pass` par votre code.
 Ajoutez au fur et à mesure ce qu'on vous demande dans les instructions en dessous.
 N'effacez rien de ce que vous écrivez... sauf si ce n'est pas juste.
 
