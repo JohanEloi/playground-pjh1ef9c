@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class HelloWorldTest{
     @Test
-    public void testRep(){
+    public void test(){
         try{
             String rep = HelloWorld.getRep();
             assertEquals("Hello World!",rep);

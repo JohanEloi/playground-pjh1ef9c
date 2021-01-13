@@ -19,7 +19,7 @@ Pour vous entrainer, essayez de rajouter `System.out.println("Hello World");` (A
  - en Java, les instructions se terminent toujours par un `;` ;
  - `//` précise que la fin de la ligne est *un commentaire*, qui est essentiellement là pour la bonne lisibilité du code, pour indiquer des informations qui ne seront pas prises en compte par l'ordinateur au moment de l'exécution du programme.
 
- @[Hello World !]({"stubs": ["ch00/HelloWorld.java"], "command": "ch00/HelloWorldTest.java"})
+ @[Hello World !]({"stubs": ["ch00/HelloWorld.java"], "command": "ch00/HelloWorldTest#test.java"})
 
 
 ```java runnable
